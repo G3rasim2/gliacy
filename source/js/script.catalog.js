@@ -360,25 +360,3 @@ buyBtnForm.addEventListener('click', function(evt){
 	}
 	alert(buyStrock);
 });
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-var Coordinate = function (x, y) {
-	this._x = x;
-	this._y = y;
-};
-
-Coordinate.prototype.setX = function(x) {
-	this.x = x;
-};
-
-Coordinate.prototype.setY = function(y) {
-	this.y = y;
-};
-
-var coord1 = new Coordinate(120, 50);
-var coord2 = new Coordinate(100, 150);
-console.log(coord1);
-console.log(coord2);
