@@ -1,0 +1,73 @@
+.catalog
+	margin-top: -14px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		list-style: none
+		margin-top: 40px
+		padding: 0
+		text-align: center
+	&__item
+		display: flex
+		position: relative
+		flex-direction: column
+		width: 267px
+		margin-bottom: 8px
+	&__img::before
+		content: ""
+		position: absolute
+		top: 0
+		width: 62px
+		height: 62px
+		background-image: url("../img/hit.svg")
+		background-repeat: no-repeat
+	&__item img
+		order: -1
+	&__item h3
+		font-size: 16px
+		font-weight: 500
+		line-height: 22px
+		padding: 0 10px
+	&__item a:hover,
+	&__item a:focus
+		border-bottom: none
+	&__item p
+		position: absolute
+		top: 165px
+		left: 10px
+		font-size: 45px
+		font-weight: 700
+		word-spacing: -7px
+		text-shadow: 1px 1px 2px #5e615f
+	&__mask
+		display: none
+		position: absolute
+		top: 0
+		width: 293px
+		height: 56px
+		margin: -13px
+		margin-top: -6px
+		padding-top: 350px
+		border-radius: 5px
+		background-color: rgba(255, 255, 255, 0.2)
+		z-index: 1
+	&__item:hover .catalog__mask,
+	&__item:focus .catalog__mask
+		display: block
+	&__item button
+		display: block
+		margin: 0 auto
+		padding: 13px 80px
+	&__btn--active
+		background: rgba(grey, 0.9)
+		text-shadow: none
+		box-shadow: none
+	&__btn--active:hover,
+	&__btn--active:focus
+		background: rgba(grey, 0.9)
+		box-shadow: none
+	&__btn--active:active
+		background: rgba(grey, 0.9)
+		box-shadow: none
+		

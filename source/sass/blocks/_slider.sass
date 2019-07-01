@@ -1,0 +1,76 @@
+.slider__wrapper
+	min-width: 940px
+	background-color: #849d8f
+	background-image: url("../img/slider-item1.png")
+	background-repeat: no-repeat
+	background-position: top center
+	transition: background-image 0.5s ease, background-color 0.5s ease
+	&::before,
+	&::after
+		content: ""
+		visibility: hidden
+	&::before
+		background-image: url("../img/slider-item2.png")
+	&::after
+		background-image: url("../img/slider-item3.png")
+.slider
+	position: relative
+	padding-top: 321px
+	text-align: center
+	color: #ffffff
+	&__list
+		margin: 0
+		padding: 0
+		list-style: none
+	&__list li
+		display: none
+	&__title
+		width: 700px
+		margin: 0 auto
+		margin-top: -46px
+		margin-bottom: 27px
+		font-size: 60px
+		line-height: 60px
+		font-weight: 800
+	&__button
+		display: inline-block
+		padding: 11px 44px
+		margin-top: 5px
+		font-size: 31px
+		line-height: 41px
+	&__controls
+		position: absolute
+		bottom: 20px
+		left: 28px
+		z-index: 20
+		font-size: 0
+	&__controls label
+		display: inline-block
+		width: 16.5px
+		height: 16.5px
+		margin-right: 8px
+		vertical-align: top
+		background-color: transparent
+		border: 2px solid #ffffff
+		border-radius: 50%
+		cursor: pointer
+	&__controls label:hover,
+	&__controls label:focus
+		opacity: 0.5
+#product-1:checked ~ .slider__wrapper
+	background-color: #849d8f
+	background-image: url("../img/slider-item1.png")
+#product-2:checked ~ .slider__wrapper
+	background-color: #8996a6
+	background-image: url("../img/slider-item2.png")
+#product-3:checked ~ .slider__wrapper
+	background-color: #9d8b84
+	background-image: url("../img/slider-item3.png")
+#product-1:checked ~ .slider__wrapper #slide1,
+#product-2:checked ~ .slider__wrapper #slide2,
+#product-3:checked ~ .slider__wrapper #slide3
+	display: block
+#product-1:checked ~ .slider__wrapper label[for="product-1"],
+#product-2:checked ~ .slider__wrapper label[for="product-2"],
+#product-3:checked ~ .slider__wrapper label[for="product-3"]
+	background-color: #ffffff

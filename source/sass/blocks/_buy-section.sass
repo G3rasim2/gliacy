@@ -1,0 +1,109 @@
+.nav-user__item:hover .buy-section,
+.nav-user__item:focus .buy-section
+	display: flex
+.buy-section
+	display: none
+	flex-direction: column
+	box-sizing: border-box
+	position: absolute
+	top: 27px
+	right: 0
+	width: 540px
+	min-height: 110px
+	padding: 0 15px 20px 15px
+	margin-top: 10px
+	border-radius: 5px
+	background-color: #f8f7f4
+	box-shadow: 0 30px 30px -10px #4f5e56
+	color: #323232
+	line-height: 20px
+	&:after
+		content: ""
+		position: absolute
+		top: -10px
+		left: 0px
+		width: 540px
+		height: 10px
+		background-color: transparent
+	& h1
+		text-align: center
+	&__list
+		width: 100%
+		border-bottom: 1px solid rgba(#323232, 0.3)
+	&__item
+		display: flex
+		justify-content: space-between
+		align-items: center
+		text-align: center
+		height: 50px
+		margin-bottom: 5px
+	&__item td
+		display: flex
+		align-items: center
+	&__item td button
+		position: relative
+		width: 20px
+		height: 20px
+		padding: 0
+		border: none
+		background-color: transparent
+	&__item td button:before,
+	&__item td button:after
+		content: ''
+		position: absolute
+		width: 20px
+		height: 2px
+		background-color: #323232
+	&__item td button:before
+		bottom: 9px
+		left: 0
+		transform: rotate(45deg)
+	&__item td button:after
+		top: 9px
+		left: 0
+		transform: rotate(-45deg)
+	&__descr
+		width: 230px
+	&__price
+		opacity: 0.6
+	& b
+		font-size: 18px
+		padding: 15px 0
+		margin-left: auto
+	& a
+		padding: 15px 15px
+		margin-left: auto
+#buy-kg-block
+	position: relative
+	width: 20px
+	& div
+		position: absolute
+		left: 0
+		width: 22px
+		height: 5px
+		border-bottom: 1px solid #323232
+		cursor: pointer
+	& div:before,
+	& div:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 14px
+		height: 1px
+		background-color: #323232
+	& div:before
+		transform: rotate(-45deg)
+		left: -1px
+	& div:after
+		transform: rotate(225deg)
+		left: 10px
+#kg-up
+	top: -10px
+#kg-down
+	transform: rotate(180deg)
+	bottom: -10px
+
+#icecream-price-kg
+	text-align: right
+	width: 50px

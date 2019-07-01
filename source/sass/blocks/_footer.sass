@@ -1,0 +1,68 @@
+.footer
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-top: 10px
+	padding-bottom: 25px
+	&__social,
+	&__info
+		list-style: none
+		padding: 0
+	&__social
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		width: 180px
+	&__social li
+		width: 32px
+		height: 32px
+		border: 3px solid rgba(255,255,255,0.5)
+		border-radius: 50%
+		opacity: 0.8
+	&__social li:hover,
+	&__social li:focus
+		opacity: 1
+	&__social li:active
+		opacity: 0.5
+	&__info
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		width: 330px
+		height: 50px
+		font-size: 13px
+		line-height: 22px
+	&__info li
+		padding: 0 16px
+	&__info li:first-child
+		position: relative
+		font-weight: 700
+	&__info svg
+		position: absolute
+		top: 5px
+		left: -7px
+	&__info a 
+		border-bottom: 0.1px solid #afbfb5
+	&__info a:hover,
+	&__info a:focus
+		color: #e84d37
+		border-bottom: 0.1px solid #e84d37
+	&__copyright 
+		display: flex
+		flex-wrap: wrap
+		width: 200px
+		margin: 0
+		padding: 0
+		font-size: 12px
+	&__copyright img
+		width: 108px
+		height: 41px
+		margin-bottom: -13px    
+	&__copyright a
+		margin: 0 3px
+		text-decoration: underline
+		text-decoration-color: rgba(255,255,255,0.5)
+	&__copyright a:hover,
+	&__copyright a:focus
+		color: #e84d37
+		text-decoration-color: #e84d37

@@ -1,0 +1,67 @@
+.nav-site
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	max-width: 600px
+	list-style: none
+	&__btn
+		padding: 7px 13px
+		margin-right: 10px
+		font-weight: 700
+		text-decoration: underline
+		text-decoration-color: rgba(255, 255, 255, 0.3)
+	&__btn:hover,
+	&__btn:focus
+		color: #323232
+		border-radius: 20px
+		background-color: #f8f7f4
+		text-decoration: none
+	&__btn:active
+		box-shadow: inset 0 2px 2px #6a6b6a
+	&__active
+		border-radius: 20px
+		background-color: #d07058
+		text-decoration: none
+	&__submenu
+		display: none
+		position: absolute
+		width: 144px
+		padding-left: 0
+		border-radius: 5px
+		border-top: 7px solid transparent
+		box-shadow: 0 30px 30px -10px #4f5e56
+		font-size: 14px
+		font-weight: 500
+		z-index: 1
+		list-style: none
+	&__catalog:hover .nav-site__submenu,
+	&__catalog:focus .nav-site__submenu
+		display: block
+	&__item a
+		display: flex
+		box-sizing: border-box
+		width: 144px
+		padding: 5px 20px
+		background-color: #f8f7f4
+		color: #323232
+	&__item a:hover,
+	&__item a:focus
+		background-color: #f0dcd6
+	&__item a:active
+		background-color: #f0b7a9
+	&__item a:after
+		content: ""
+		position: absolute
+		top: 37px
+		left: 7px
+		width: 128px
+		height: 1px
+		background-color: #d1d0ce
+	&__submenu li:first-child a
+		font-weight: 700
+		padding: 7px 20px
+		border-top-right-radius: 5px
+		border-top-left-radius: 5px
+	&__submenu li:last-child a
+		border-bottom-right-radius: 5px
+		border-bottom-left-radius: 5px

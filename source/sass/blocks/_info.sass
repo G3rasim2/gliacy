@@ -1,0 +1,35 @@
+.info
+	padding: 10px 20px
+	padding-bottom: 20px
+	border-radius: 15px
+	color: #323232
+	background-color: #ece0c6
+	background-image: url("../img/waffle-background.jpg")
+	background-position: 0 0
+	& h1
+		font-size: 24px
+		font-weight: 500
+		line-height: 30px
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 0
+		font-size: 16px
+		font-weight: 400
+		line-height: 22px
+		list-style: none
+	&__item
+		width: 42%
+		padding-top: 21px
+		padding-left: 60px
+		background-repeat: no-repeat
+		background-position: 0 10px
+	&__item:first-child
+		background-image: url("../img/ice-cream.svg")
+	&__item:nth-child(2)
+		background-image: url("../img/eco.svg")
+	&__item:nth-child(3)
+		background-image: url("../img/cow.svg")
+	&__item:nth-child(4)
+		background-image: url("../img/thermometer.svg")

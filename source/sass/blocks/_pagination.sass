@@ -1,0 +1,50 @@
+.pagination
+	display: flex
+	justify-content: flex-end
+	position: relative
+	margin-right: -10px
+	margin-top: 42px
+	margin-bottom: 48px
+	list-style: none
+	font-weight: 700
+	& a 
+		display: block
+		position: relative
+		width: 30px
+		height: 30px
+		box-sizing: border-box
+		padding-top: 3px
+		margin: 0 4px
+		border-radius: 50%
+		text-align: center
+		cursor: pointer
+	& a:hover,
+	& a:focus
+		color: #323232
+		background-color: #9aada2
+	&__current
+		color: #323232
+		background-color: #f8f7f4
+	& span::before,
+	& span::after
+		content: ''
+		position: absolute
+		width: 14px
+		height: 2px
+		background-color: rgba(#fff, 0.5)
+	& .prev::before
+		top: 19px
+		left: 6px
+		transform: rotate(45deg)
+	& .prev::after
+		top: 10px
+		left: 6px
+		transform: rotate(-45deg)
+	& .next::before
+		top: 19px
+		left: 10px
+		transform: rotate(-45deg)
+	& .next::after
+		top: 10px
+		left: 10px
+		transform: rotate(45deg)

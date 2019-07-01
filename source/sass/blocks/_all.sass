@@ -1,0 +1,859 @@
+.btn
+    font-size: 18px
+    font-weight: 700
+    text-align: center
+    color: #ffffff
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76)
+    background: #f26843
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%)
+    border-radius: 50px
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64)
+    border: none
+.btn:hover,
+.btn:focus
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%)
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1)
+.btn:active
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%)
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1)
+.body-catalog
+    background: linear-gradient(to bottom, #9db1a5 0%, #849d8f 40%)
+.main-header
+    display: flex
+    flex-direction: column
+.time-work
+    width: 180px
+    padding: 0
+    margin: 0
+    margin-left: auto
+    margin-top: -11px
+    font-weight: 700
+    text-align: right
+.time-work p
+    margin: 0
+    padding: 0
+    font-size: 14px
+.time-work a
+    display: block
+    margin-right: -1px
+    font-size: 22px
+.breadcrumbs-list 
+    display: flex
+    padding: 0
+    margin: 0
+    margin-top: -22px
+    font-size: 14px
+    font-weight: 400
+    list-style: none
+.breadcrumbs-item
+    margin-right: 8px
+    word-spacing: 4px
+.breadcrumbs-item a
+    text-decoration: underline
+    text-decoration-color: rgba(255, 255, 255, 0.3)
+.breadcrumbs-item a:hover,
+.breadcrumbs-item a:focus
+    text-decoration: none
+.site-wrapper
+    min-width: 940px
+    background-color: #849d8f
+    background-image: url("../img/slider-item1.png")
+    background-repeat: no-repeat
+    background-position: top center
+    transition: background-image 0.5s ease, background-color 0.5s ease
+.site-wrapper::before,
+.site-wrapper::after
+    content: ""
+    visibility: hidden
+.site-wrapper::before
+    background-image: url("../img/slider-item2.png")
+.site-wrapper::after
+    background-image: url("../img/slider-item3.png")
+.slider
+    position: relative
+    padding-top: 321px
+    text-align: center
+    color: #ffffff
+.slider-list
+    margin: 0
+    padding: 0
+    list-style: none
+.slide
+    display: none
+.slide-title
+    width: 700px
+    margin: 0 auto
+    margin-top: -46px
+    margin-bottom: 27px
+    font-size: 60px
+    line-height: 60px
+    font-weight: 800
+.button
+    display: inline-block
+    padding: 11px 44px
+    margin-top: 5px
+    font-weight: 600
+    font-size: 31px
+    line-height: 41px
+    text-align: center
+    color: #ffffff
+    vertical-align: top
+    text-decoration: none
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76)
+    background: #f26843
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%)
+    border-radius: 50px
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64)
+    border: none
+    cursor: pointer
+.button:hover,
+.button:focus
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%)
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1)
+.button:active
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%)
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1)
+.slider-controls
+    position: absolute
+    bottom: 20px
+    left: 28px
+    z-index: 20
+    font-size: 0
+.slider-controls label
+    display: inline-block
+    width: 16.5px
+    height: 16.5px
+    margin-right: 8px
+    vertical-align: top
+    background-color: transparent
+    border: 2px solid #ffffff
+    border-radius: 50%
+    cursor: pointer
+.slider-controls label:hover,
+.slider-controls label:focus
+    opacity: 0.5
+#product-1:checked ~ .site-wrapper
+    background-color: #849d8f
+    background-image: url("../img/slider-item1.png")
+#product-2:checked ~ .site-wrapper
+    background-color: #8996a6
+    background-image: url("../img/slider-item2.png")
+#product-3:checked ~ .site-wrapper
+    background-color: #9d8b84
+    background-image: url("../img/slider-item3.png")
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3
+    display: block
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"]
+    background-color: #ffffff
+.filters-form
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    min-width: 860px
+    margin-top: 31px
+    font-size: 14px
+    font-weight: 500
+.filters fieldset
+    border: none
+    margin: 0
+    margin-right: 15px
+    margin-bottom: 13px
+    padding: 0
+.filters legend
+    margin: 0
+    margin-left: 17px
+    padding: 0
+.filters-form label
+    font-size: 16px
+    cursor: pointer
+.filters-form-type
+    box-sizing: border-box
+    position: relative
+    width: 194px
+    padding: 9px 15px
+    color: #ffffff
+    background-color: #a9bbb1
+    border-radius: 25px
+    border: none
+    font-size: 16px
+    appearance: none
+    background-image: url("../img/icon-down-dir1.svg")
+    background-repeat: no-repeat
+    background-position: 167px 14px
+    cursor: pointer
+.filters-form-type:hover,
+.filters-form-type:focus
+    color: #323232
+    background-color: #ffffff
+    background-image: url("../img/icon-down-dir2.svg")
+.filters-form-price
+    box-sizing: border-box
+    position: relative
+    width: 218px
+    margin: 0
+    padding: 16px 21px
+    background-color: #a9bbb1
+    border-radius: 25px
+.filters-form-price .scale
+    width: 176px
+    height: 4px
+    background: rgba(255, 255, 255, 0.5)
+.filters-form-price .bar
+    width: 100px
+    height: 4px
+    margin-left: 22px
+    background: #ffffff
+.range-toggle
+    position: absolute
+    top: 8px
+    width: 4px
+    height: 4px
+    background: #ababab
+    border: 8px solid #ffffff
+    border-radius: 50%
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2)
+    cursor: pointer
+.range-toggle-min
+    left: 33px
+.range-toggle-max
+    left: 131px
+.filters-form-fat
+    display: flex
+    box-sizing: border-box
+    min-width: 415px
+    padding: 5px 16px
+    padding-top: 7px
+    background-color: #a9bbb1
+    border-radius: 50px
+.filters-form-fat label
+    position: relative
+    padding-left: 27px
+    padding-right: 22px
+.filters-form-fat label:last-child
+    padding-right: 0
+.filters-form-fat input[type="radio"] + .radio-indicator
+    position: absolute
+    top: 0
+    left: -4px
+    width: 16px
+    height: 16px
+    border: 3px solid #ffffff
+    border-radius: 50%
+    opacity: 0.8
+.filters-form-fat input[type="radio"] + .radio-indicator:hover,
+.filters-form-fat input[type="radio"] + .radio-indicator:focus
+    opacity: 1
+.filters-form-fat input[type="radio"] + .radio-indicator:active
+    opacity: 0.5
+.filters-form-fat input[type="radio"]:focus + .radio-indicator
+    border-color: #ffffff
+.filters-form-fat input[type="radio"]:checked + .radio-indicator::before
+    content: ""
+    position: absolute
+    top: 3.5px
+    left: 4px
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    background-color: #ffffff
+.filters-form-checkbox
+    display: flex
+    box-sizing: border-box
+    min-width: 702px
+    padding: 6px 15px
+    background-color: #a9bbb1
+    border-radius: 50px
+.filters-form-checkbox label
+    position: relative
+    padding-left: 32px
+    padding-right: 22px
+.filters-form-checkbox label:last-child
+    padding-right: 0
+.filters-form-checkbox input[type="checkbox"] + .checkbox-indicator
+    position: absolute
+    top: 2px
+    left: 0
+    width: 20px
+    height: 20px
+    background-image: url("../img/checkbox-off.png")
+    background-repeat: no-repeat
+    background-position: 0 0
+    opacity: 0.7
+.filters-form-checkbox input[type="checkbox"] + .checkbox-indicator:hover,
+.filters-form-checkbox input[type="checkbox"] + .checkbox-indicator:focus
+    opacity: 1
+.filters-form-checkbox input[type="checkbox"] + .checkbox-indicator:active
+    opacity: 0.4
+.filters-form-checkbox input[type="checkbox"]:focus + .checkbox-indicator
+    border-color: #ffffff
+.filters-form-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 23px
+    height: 20px
+    background-image: url("../img/checkbox-on.png")
+    background-repeat: no-repeat
+    background-position: 0 0
+.filters-form .btn 
+    box-sizing: border-box
+    width: 140px
+    padding: 7px 17px
+    margin-top: 10px
+    background: none
+    background-color: rgba(255, 255, 255, 0.2)
+    border: 2px solid #f8f7f4
+    color: white
+    font-size: 16px
+    font-weight: 500
+    text-shadow: none
+    box-shadow: none
+    cursor: pointer
+.filters-form .btn:hover,
+.filters-form .btn:focus
+    color: #323232
+    background-color: #f8f7f4
+.filters-form .btn:active
+    box-shadow: inset 0 2px 2px #6a6b6a
+.stock-block
+    display: flex
+    margin-top: 40px
+    line-height: 22px
+    font-weight: 700
+.stock-block h3
+    margin: 0
+    padding-top: 25px
+    font-size: 35px
+.stock-block p
+    margin: 0
+    padding-top: 25px
+    font-size: 18px
+.stock-block a
+    align-self: flex-end
+    padding: 12px 23px
+    margin-top: 45px
+.stock-raspberries
+    display: flex
+    flex-direction: column
+    width: 560px
+    margin: 0
+    margin-right: 26px
+    padding: 0px 20px
+    padding-bottom: 22px
+    border-radius: 15px
+    background-color: #a72a48
+    background-image: url("../img/raspberry-background.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    z-index: 1
+.stock-chocolate
+    display: flex
+    flex-direction: column
+    width: 560px
+    margin: 0
+    padding: 0px 20px
+    padding-bottom: 22px
+    border-radius: 15px
+    background-color: #3d2317
+    background-image: url("../img/сhocolate background.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    z-index: 1
+.catalog
+    margin-top: -14px
+.catalog-title
+    margin-top: 9px
+    font-size: 35px
+    font-weight: 700
+.catalog-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    list-style: none
+    margin: 0
+    margin-top: 40px
+    padding: 0
+    text-align: center
+.catalog-item
+    display: flex
+    position: relative
+    flex-direction: column
+    width: 267px
+    margin-bottom: 8px
+.hit-img::before
+    content: ""
+    position: absolute
+    top: 0
+    width: 62px
+    height: 62px
+    background-image: url("../img/hit.svg")
+    background-repeat: no-repeat
+.catalog-item img
+    order: -1
+.catalog-item h3
+    width: 258px
+    min-height: 44px
+    font-size: 16px
+    font-weight: 500
+    line-height: 22px
+    margin: 0
+    padding: 0
+    padding-left: 5px
+    padding-top: 13px
+    z-index: 3
+.catalog-item a
+    border-bottom: 0.1px solid #afbfb5
+.catalog-item a:hover,
+.catalog-item a:focus
+    border-bottom: none
+.catalog-item p
+    position: relative
+    bottom: 105px
+    right: 58px
+    margin: 0
+    padding: 0
+    font-size: 45px
+    font-weight: 700
+    word-spacing: -7px
+    text-shadow: 1px 1px 2px #5e615f
+.catalog-item span
+    margin: 0
+    padding: 0
+    font-size: 30px
+.catalog-item button
+    padding: 13px 80px
+.catalog-item-mask
+    display: none
+    position: absolute
+    top: 0
+    box-sizing: border-box
+    width: 293px
+    height: 406px
+    margin: -13px
+    margin-top: -6px
+    padding-top: 350px
+    border-radius: 5px
+    background-color: rgba(255, 255, 255, 0.2)
+    z-index: 2
+.catalog-item:hover .catalog-item-mask,
+.catalog-item:focus .catalog-item-mask
+    display: block
+.info-section
+    box-sizing: border-box
+    width: 1146px
+    padding: 25px 20px
+    padding-bottom: 19px
+    margin-bottom: 40px
+    border-radius: 15px
+    color: #323232
+    background-color: #ece0c6
+    background-image: url("../img/waffle-background.jpg")
+    background-position: 0 0
+    background-repeat: repeat
+.info-section h1
+    margin: 0
+    padding: 0
+    font-size: 24px
+    font-weight: 500
+    line-height: 30px
+    word-spacing: 1px
+.info-section-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    font-size: 16px
+    font-weight: 400
+    line-height: 22px
+    list-style: none
+.info-section-item
+    width: 482px
+    padding-top: 21px
+    padding-bottom: 3px
+    padding-left: 57px
+.info-section-ice-cream
+    background-image: url("../img/ice-cream.svg")
+    background-repeat: no-repeat
+    background-position: -0 10px
+.info-section-leafle
+    background-image: url("../img/eco.svg")
+    background-repeat: no-repeat
+    background-position: -0 10px
+.info-section-cow
+    background-image: url("../img/cow.svg")
+    background-repeat: no-repeat
+    background-position: -0 10px
+.info-section-thermometer
+    background-image: url("../img/thermometer.svg")
+    background-repeat: no-repeat
+    background-position: -0 10px
+.news-wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+    color:  #323232
+.news-wrapper a
+    display: block
+    width: 300px
+    color:  #323232
+.news-blog
+    box-sizing: border-box
+    width: 560px
+    padding-top: 10px
+    padding-left: 20px
+    border-radius: 15px
+    background-color: #ffffff
+    background-image: url("../img/strawberry-background.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+.news-blog h2
+    font-size: 16px
+    font-weight: 500
+.news-blog a
+    margin-top: -14px
+    font-size: 24px
+    font-weight: 700
+    line-height: 30px
+    text-decoration: underline
+.news-blog a:hover,
+.news-blog a:focus
+    color: #e84d37
+.subscription-mail
+    box-sizing: border-box
+    width: 560px
+    padding: 5px
+    border-radius: 15px
+    background-image: repeating-linear-gradient(132deg,white 0px, white 7px, #92cdff 7px, #92cdff 14px, white 14px, white 21px, #fe9e90 21px, #fe9e90 28px)
+    background-repeat: no-repeat
+.subscription-mail-div 
+    box-sizing: border-box
+    width: 550px
+    height: 100%
+    padding: 13px 22px
+    padding-right: 17px
+    padding-bottom: 8px
+    border-radius: 15px
+    background-color: #f8f7f4
+.subscription-mail p
+    color: #5a5a5a
+    font-size: 16px
+    font-weight: 400
+    line-height: 22px
+.subscription-form input[type="email"]
+    box-sizing: border-box
+    width: 368px
+    margin-top: 20px
+    margin-bottom: 10px
+    padding: 12px 13px
+    border: 1px solid #d3d3d2
+    border-radius: 5px
+    font-size: 16px
+    font-weight: 400
+.subscription-form button
+    margin-left: 7px
+    padding: 12px 16px
+.main-maps
+    position: relative
+    padding-right: 0
+    padding-left: 0
+.main-maps iframe
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+.section-feedback 
+    display: flex
+    flex-direction: column
+    width: 251px
+    position: absolute
+    right: 28px
+    top: -383px
+    padding: 19px 25px
+    padding-top: 20px
+    border-radius: 15px
+    background: #ffffff
+    color:  #323232
+    text-align: left
+    z-index: 2
+.section-feedback span
+    display: block
+    margin-top: 2px
+    font-size: 18px
+    font-weight: 700
+    line-height: 24px
+.section-feedback p
+    margin: 9px 0
+    font-size: 14px
+    font-weight: 400
+    line-height: 20px
+.section-feedback a
+    display: block
+    margin-top: 5px
+    margin-bottom: 3px
+    line-height: 22px
+.section-feedback .btn
+    padding: 10px 14px
+.feedback-phone
+    color:  #323232
+    font-size: 18px
+    font-weight: 700
+    line-height: 22px
+.pagination-list
+    display: flex
+    justify-content: flex-end
+    position: relative
+    margin-right: -10px
+    margin-top: 42px
+    margin-bottom: 48px
+    list-style: none
+.pagination-item a:hover,
+.pagination-item a:focus
+    color: #323232
+    background-color: #9aada2
+.pagination-item a 
+    display: block
+    line-height: 18px
+    padding: 0 8px
+    padding-top: 5px
+    padding-bottom: 3px
+    border-radius: 50%
+    margin: 0 2px
+.pagination-list .pagination-item:first-child
+    margin-right: 5px
+.pagination-list .pagination-item:last-child
+    margin-left: 5px
+.pagination-item-current a
+    color: #323232
+    background-color: #f8f7f4
+.pagination-item-back
+    transform: rotate(180deg)
+.pagination-list::before
+    content: ""
+    position: absolute
+    top: 56px
+    left: 0
+    width: 1144px
+    height: 1px
+    background-color: #ffffff;
+    opacity: 0.3
+.main-footer 
+    display: flex
+    position: relative
+    font-weight: 400
+    margin-top: 9px
+    padding-bottom: 25px
+.footer-social-list,
+.footer-info-list
+    list-style: none
+.footer-social-list
+    display: flex
+    flex-wrap: wrap
+    width: 228px
+    margin-top: 19px
+    margin-left: -39px
+.footer-social-list .social-item
+    align-self: center
+    width: 32px
+    height: 32px
+    margin-right: 11px
+    margin-bottom: 5px
+    border: 3px solid rgba(255,255,255,0.5)
+    border-radius: 50%
+    opacity: 0.8
+.footer-social-list .social-item:hover,
+.footer-social-list .social-item:focus
+    opacity: 1
+.footer-social-list .social-item:active
+    opacity: 0.5
+.footer-info-list
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    height: 50px
+    margin: 0 auto
+    margin-top: 15px
+    padding: 0
+    font-size: 13px
+    line-height: 22px
+.footer-info-list li
+    padding: 0 15.5px
+.footer-info-list li:first-child
+    position: relative
+    font-weight: 700
+.footer-info-list svg
+    position: absolute
+    top: 5px
+    left: -7px
+.footer-info-list a 
+    border-bottom: 0.1px solid #afbfb5
+.footer-info-list a:hover,
+.footer-info-list a:focus
+    color: #e84d37
+    border-bottom: 0.1px solid #e84d37
+.footer-copyright 
+    display: flex
+    flex-wrap: wrap
+    width: 190px
+    margin: 0
+    margin-left: auto
+    margin-right: -2px
+    padding: 0
+    font-size: 12px
+.footer-copyright img
+    width: 108px
+    height: 41px
+    margin-right: 30px
+    margin-bottom: -13px
+.footer-copyright a
+    margin: 0 3px
+    text-decoration: underline
+    text-decoration-color: rgba(255,255,255,0.5)
+.footer-copyright a:hover,
+.footer-copyright a:focus
+    color: #e84d37
+    text-decoration-color: #e84d37
+@-webkit-keyframes bounce
+    0%
+        transform: translateY(-2000px)
+    70%
+        transform: translateY(30px)
+    90%
+        transform: translateY(-10px)
+    100%
+        transform: translateY(0)
+@keyframes bounce
+    0%
+        transform: translateY(-2000px)
+    70%
+        transform: translateY(30px)
+    90%
+        transform: translateY(-10px)
+    100%
+        transform: translateY(0)
+
+@-webkit-keyframes shake
+    0%,
+    100%
+        transform: translateX(0)
+    10%,
+    30%,
+    50%,
+    70%,
+    90%
+        transform: translateX(-10px)
+    20%,
+    40%,
+    60%,
+    80%
+        transform: translateX(10px)
+@keyframes shake
+    0%,
+    100%
+        transform: translateX(0)
+    10%,
+    30%,
+    50%,
+    70%,
+    90%
+        transform: translateX(-10px)
+    20%,
+    40%,
+    60%,
+    80%
+        transform: translateX(10px)
+.feedback-form
+    display: none
+    position: fixed
+    top: 50%
+    left: 50%
+    box-sizing: border-box
+    width: 476px
+    padding: 25px
+    margin-top: -221px
+    margin-left: -238px
+    border-radius: 10px
+    background-color: #f8f7f4
+    color: #323232
+    font-size: 24px
+    font-weight: 500
+    z-index: 100
+.feedback-form-show
+    display: block
+    animation: bounce 0.6s
+.modal-error
+    animation: shake 0.6s
+.modal-close
+    position: absolute
+    top: 12px
+    right: 14px
+    width: 20px
+    height: 20px
+    font-size: 0
+    background-color: transparent
+    border: 0
+    cursor: pointer
+.modal-close::before,
+.modal-close::after
+    content: ""
+    position: absolute
+    top: 9px
+    left: 1px
+    width: 19px
+    height: 2px
+    background-color: #231f20
+.modal-close::before
+    transform: rotate(45deg)
+.modal-close::after
+    transform: rotate(-45deg)
+.feedback-form p 
+    font-size: 24px
+    font-weight: 500
+    margin-top: 0
+.feedback-form-field
+    font-size: 16px
+    font-weight: 400
+.feedback-form-field input
+    box-sizing: border-box
+    width: 268px
+    height: 44px
+    border: 1px solid #d3d3d2
+    border-radius: 5px
+    padding: 15px 10px
+    margin-bottom: 20px
+.feedback-form-field input:hover
+    border: 2px solid #d3d3d2
+.feedback-form-field input::placeholder
+    opacity: 0.7
+.feedback-form-field textarea
+    box-sizing: border-box
+    width: 430px
+    height: 155px
+    border-color: #d3d3d2
+    border-radius: 5px
+    padding: 10px
+    resize: none
+.feedback-form-field textarea:hover
+    border: 2px solid #d3d3d2
+.feedback-form-field textarea::placeholder
+    opacity: 0.7
+.feedback-form-field button
+    padding: 10px 20px
+    margin-top: 15px
+    margin-left: 300px
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,0.4)
+    z-index: 50
+.overlay-show 
+    display: block
